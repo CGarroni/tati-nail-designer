@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+:root {
+  --font-sans: "DM Sans", sans-serif;
+  --font-serif: "DM Serif Display", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+section {
+  scroll-margin-top: 96px;
+}
