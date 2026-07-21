@@ -1,59 +1,104 @@
 import Image from "next/image";
 
 const whatsappLink =
-  "https://wa.me/5551994383663?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20da%20Tati.";
+	"https://wa.me/5551994383663?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20ou%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Tati.";
 
 export default function Hero() {
-  return (
-    <section id="topo" className="bg-[#f8f3f1] px-4 pb-16 pt-10 md:pb-24 md:pt-16">
-      <div className="mx-auto grid max-w-7xl items-center gap-10 md:grid-cols-2">
-        <div className="space-y-6">
-          <span className="inline-flex rounded-md bg-[#ead7d5] px-4 py-2 text-sm text-[#4a3d3d]">
-            Atendimento com hora marcada em Novo Hamburgo
-          </span>
+	return (
+		<section id="topo" className="relative overflow-hidden bg-[#f4ece8]">
+			<div className="relative hidden xl:block min-h-[92vh]">
+				<Image
+					src="/galeria/nail-banner-desktop.png"
+					alt="Hero desktop da Tati Silva Nail Designer"
+					fill
+					priority
+					sizes="100vw"
+					className="object-cover object-center"
+				/>
 
-          <div className="space-y-4">
-            <h1 className="font-serif text-4xl font-normal leading-tight text-[#4a3d3d] md:text-6xl">
-              Realce sua beleza com unhas feitas com cuidado, técnica e acabamento elegante.
-            </h1>
+				<a
+					href={whatsappLink}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="
+            absolute z-20
+            left-[10%] top-[82%]
+            xl:left-[15%] xl:top-[86%]
+            2xl:left-[17%] 2xl:top-[88%]
+            inline-flex min-h-[52px] items-center justify-center
+            rounded-md bg-[#c99384] px-7 py-3
+            text-sm font-semibold tracking-[0.04em] text-white
+            shadow-[0_14px_30px_rgba(201,147,132,0.28)]
+            transition hover:bg-[#bc8576]
+            focus-visible:outline-none focus-visible:ring-2
+            focus-visible:ring-[#c99384] focus-visible:ring-offset-2
+          "
+				>
+					Agendar horário
+				</a>
+			</div>
 
-            <p className="max-w-xl text-base leading-7 text-[#6b5a5a] md:text-lg">
-              Blindagem, esmaltação em gel, alongamento e manutenção com atendimento individual, materiais esterilizados e horário agendado.
-            </p>
-          </div>
+			<div className="relative hidden md:block xl:hidden min-h-[78vh]">
+				<Image
+					src="/galeria/nail-banner-tablet.png"
+					alt="Hero tablet da Tati Silva Nail Designer"
+					fill
+					priority
+					sizes="100vw"
+					className="object-cover object-center"
+				/>
 
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-md border border-[#b78f8c] bg-[#cda5a3] px-6 py-3 text-center text-sm font-semibold text-white shadow-[0_0_0_1px_rgba(255,255,255,0.12)_inset] transition hover:border-[#ab817e] hover:bg-[#c49a98] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#cda5a3]"
-            >
-              Agendar no WhatsApp
-            </a>
+				<a
+					href={whatsappLink}
+					target="_blank"
+					rel="noopener noreferrer"
+					className="
+            absolute z-20
+            left-[10%] top-[82%]
+            inline-flex min-h-[50px] items-center justify-center
+            rounded-md bg-[#c99384] px-6 py-3
+            text-sm font-semibold tracking-[0.04em] text-white
+            shadow-[0_14px_30px_rgba(201,147,132,0.24)]
+            transition hover:bg-[#bc8576]
+            focus-visible:outline-none focus-visible:ring-2
+            focus-visible:ring-[#c99384] focus-visible:ring-offset-2
+          "
+				>
+					Agendar horário
+				</a>
+			</div>
 
-            <a
-              href="#servicos"
-              className="rounded-md border border-[#cdbab2] bg-[#f4e8e5] px-6 py-3 text-center text-sm font-semibold text-[#5c4e4e] shadow-[0_0_0_1px_rgba(255,255,255,0.35)_inset] transition hover:border-[#c1aba2] hover:bg-[#efdfdb] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#cdbab2]"
-            >
-              Ver serviços
-            </a>
-          </div>
-        </div>
+			<div className="md:hidden bg-[#f4ece8]">
+				<div className="relative min-h-[68vh]">
+					<Image
+						src="/galeria/nail-banner-mobile.png"
+						alt="Hero mobile da Tati Silva Nail Designer"
+						fill
+						priority
+						sizes="100vw"
+						className="object-cover object-top"
+					/>
+				</div>
 
-        <div className="relative overflow-hidden rounded-4xl border border-[#e9e3e0] bg-white shadow-sm">
-          <Image
-            src="/galeria/hero-desktop2.png"
-            alt="Ambiente da Tati Silva Nail Designer"
-            width={1536}
-            height={2048}
-            priority
-            quality={92}
-            sizes="(max-width: 768px) 100vw, 50vw"
-            className="h-full w-full object-cover object-center"
-          />
-        </div>
-      </div>
-    </section>
-  );
+				<div className="relative z-10 bg-[#f4ece8] px-4 pb-8 pt-4">
+					<a
+						href={whatsappLink}
+						target="_blank"
+						rel="noopener noreferrer"
+						className="
+              flex min-h-[52px] w-full items-center justify-center
+              rounded-md bg-[#c99384] px-6 py-3
+              text-sm font-semibold tracking-[0.04em] text-white
+              shadow-[0_14px_30px_rgba(201,147,132,0.24)]
+              transition hover:bg-[#bc8576]
+              focus-visible:outline-none focus-visible:ring-2
+              focus-visible:ring-[#c99384] focus-visible:ring-offset-2
+            "
+					>
+						Agendar horário
+					</a>
+				</div>
+			</div>
+		</section>
+	);
 }
