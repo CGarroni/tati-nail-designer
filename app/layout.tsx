@@ -17,7 +17,7 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-	metadataBase: new URL("https://SEU-PROJETO.vercel.app"),
+	metadataBase: new URL("https://tatinaildesigner.vercel.app/"),
 	title: "Tati Silva Nail Designer | Unhas em Novo Hamburgo",
 	description:
 		"Blindagem, esmaltação em gel, alongamento e manutenção com atendimento individual em Canudos, Novo Hamburgo.",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 		title: "Tati Silva Nail Designer | Unhas em Novo Hamburgo",
 		description:
 			"Blindagem, esmaltação em gel, alongamento e manutenção com atendimento individual em Canudos, Novo Hamburgo.",
-		url: "https://SEU-PROJETO.vercel.app",
+		url: "https://tatinaildesigner.vercel.app/",
 		siteName: "Tati Silva Nail Designer",
 		locale: "pt_BR",
 		type: "website",

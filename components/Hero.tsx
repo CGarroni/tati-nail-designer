@@ -25,7 +25,7 @@ export default function Hero() {
             left-[10%] top-[82%]
             xl:left-[15%] xl:top-[86%]
             2xl:left-[17%] 2xl:top-[88%]
-            inline-flex min-h-[52px] items-center justify-center
+            inline-flex min-h-13 items-center justify-center
             rounded-md bg-[#c99384] px-7 py-3
             text-sm font-semibold tracking-[0.04em] text-white
             shadow-[0_14px_30px_rgba(201,147,132,0.28)]
@@ -55,7 +55,7 @@ export default function Hero() {
 					className="
             absolute z-20
             left-[10%] top-[82%]
-            inline-flex min-h-[50px] items-center justify-center
+            inline-flex min-h-12.5 items-center justify-center
             rounded-md bg-[#c99384] px-6 py-3
             text-sm font-semibold tracking-[0.04em] text-white
             shadow-[0_14px_30px_rgba(201,147,132,0.24)]
@@ -86,7 +86,7 @@ export default function Hero() {
 						target="_blank"
 						rel="noopener noreferrer"
 						className="
-              flex min-h-[52px] w-full items-center justify-center
+              flex min-h-13 w-full items-center justify-center
               rounded-md bg-[#c99384] px-6 py-3
               text-sm font-semibold tracking-[0.04em] text-white
               shadow-[0_14px_30px_rgba(201,147,132,0.24)]
