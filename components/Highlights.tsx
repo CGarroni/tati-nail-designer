@@ -7,19 +7,19 @@ const highlights = [
 
 export default function Highlights() {
   return (
-    <section className="px-4 py-16 md:py-24">
-      <div className="mx-auto max-w-7xl rounded-4xl border border-[#eadfdb] bg-[#fffaf8] p-8 md:p-12">
-        <div className="grid gap-6 md:grid-cols-[0.95fr_1.05fr] md:items-center">
-          <div className="space-y-4">
-            <span className="inline-flex rounded-md bg-[#ead7d5] px-4 py-2 text-sm text-[#4a3d3d]">
+    <section className="px-4 py-20 md:py-32">
+      <div className="mx-auto max-w-7xl rounded-3xl border border-[#f0eae6] bg-[#fffcfb] p-8 md:p-16 shadow-[0_10px_40px_rgba(74,61,61,0.03)]">
+        <div className="grid gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
+          <div className="space-y-5">
+            <span className="inline-flex rounded-full bg-[#f4e8e5] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#8a7472]">
               Diferenciais
             </span>
 
-            <h2 className="font-serif text-3xl font-normal leading-tight text-[#4a3d3d] md:text-5xl">
+            <h2 className="font-serif text-3xl font-normal leading-tight text-[#4a3d3d] md:text-4xl lg:text-5xl">
               Um atendimento pensado para quem valoriza cuidado, conforto e tranquilidade.
             </h2>
 
-            <p className="text-base leading-7 text-[#6b5a5a] md:text-lg">
+            <p className="text-base leading-relaxed text-[#6b5a5a] md:text-lg">
               Cada detalhe do atendimento é pensado para oferecer mais organização, bem-estar e confiança do início ao fim.
             </p>
           </div>
@@ -28,9 +28,12 @@ export default function Highlights() {
             {highlights.map((item) => (
               <div
                 key={item}
-                className="rounded-3xl border border-[#efe7e3] bg-white px-5 py-5 text-sm font-medium text-[#5c4e4e] shadow-sm md:text-base"
+                className="group rounded-2xl border border-[#f4ece8] bg-white px-6 py-6 text-sm font-medium text-[#5c4e4e] shadow-xs transition duration-300 hover:border-[#dfceca] hover:shadow-md md:text-base"
               >
-                {item}
+                <div className="flex items-center gap-3">
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#cda5a3] transition-transform duration-300 group-hover:scale-150" />
+                  {item}
+                </div>
               </div>
             ))}
           </div>

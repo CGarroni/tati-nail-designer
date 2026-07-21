@@ -88,24 +88,24 @@ export default function Galeria() {
 	const extraItems = useMemo(() => galleryItems.slice(5), []);
 
 	return (
-		<section id="galeria" className="px-4 py-16 md:py-24">
-			<div className="mx-auto max-w-7xl space-y-10">
+		<section id="galeria" className="px-4 py-20 md:py-32 bg-[#faf6f4]/30">
+			<div className="mx-auto max-w-7xl space-y-12">
 				<div className="max-w-2xl space-y-4">
-					<span className="inline-flex rounded-md bg-[#ead7d5] px-4 py-2 text-sm text-[#4a3d3d]">
+					<span className="inline-flex rounded-full bg-[#f4e8e5] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#8a7472]">
 						Galeria
 					</span>
 
-					<h2 className="font-serif text-3xl font-semibold leading-tight text-[#4a3d3d] md:text-5xl">
+					<h2 className="font-serif text-3xl font-normal leading-tight text-[#4a3d3d] md:text-4xl lg:text-5xl">
 						Alguns resultados que refletem cuidado, delicadeza e acabamento.
 					</h2>
 
-					<p className="text-base leading-7 text-[#6b5a5a] md:text-lg">
+					<p className="text-base leading-relaxed text-[#6b5a5a] md:text-lg">
 						Cada detalhe é pensado para valorizar sua beleza com elegância,
 						personalidade e um resultado visual bem finalizado.
 					</p>
 				</div>
 
-				<div className="grid gap-4 md:grid-cols-12 md:grid-rows-[repeat(2,minmax(220px,1fr))]">
+				<div className="grid gap-6 md:grid-cols-12 md:grid-rows-[repeat(2,minmax(240px,1fr))]">
 					{initialItems.map((item, index) => {
 						const featured = index === 0;
 
@@ -113,10 +113,10 @@ export default function Galeria() {
 							<article
 								key={item.src}
 								className={[
-									"group relative overflow-hidden rounded-[28px] border border-[#e9e3e0] bg-white shadow-sm",
+									"group relative overflow-hidden rounded-3xl border border-[#f0eae6] bg-white shadow-xs transition duration-300 hover:shadow-md",
 									featured
-										? "md:col-span-7 md:row-span-2 min-h-80"
-										: "md:col-span-5 min-h-55",
+										? "md:col-span-7 md:row-span-2 min-h-80 md:min-h-125"
+										: "md:col-span-5 min-h-64",
 								].join(" ")}
 							>
 								<Image
@@ -128,61 +128,39 @@ export default function Galeria() {
 											? "(max-width: 768px) 100vw, 58vw"
 											: "(max-width: 768px) 100vw, 35vw"
 									}
-									className="object-cover transition duration-500 group-hover:scale-[1.02]"
+									className="object-cover transition duration-700 group-hover:scale-105"
 								/>
 							</article>
 						);
 					})}
 				</div>
 
-				<div className="md:hidden">
-					<div className="grid grid-cols-1 gap-4">
-						{expanded &&
-							extraItems.map((item) => (
-								<article
-									key={item.src}
-									className="group relative min-h-80 overflow-hidden rounded-3xl border border-[#e9e3e0] bg-white shadow-sm"
-								>
-									<Image
-										src={item.src}
-										alt={item.alt}
-										fill
-										sizes="100vw"
-										className="object-cover transition duration-500 group-hover:scale-[1.02]"
-									/>
-								</article>
-							))}
+				{expanded && (
+					<div className="grid gap-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pt-2">
+						{extraItems.map((item) => (
+							<article
+								key={item.src}
+								className="group relative min-h-72 overflow-hidden rounded-3xl border border-[#f0eae6] bg-white shadow-xs transition duration-300 hover:shadow-md"
+							>
+								<Image
+									src={item.src}
+									alt={item.alt}
+									fill
+									sizes="(max-width: 768px) 100vw, 33vw"
+									className="object-cover transition duration-700 group-hover:scale-105"
+								/>
+							</article>
+						))}
 					</div>
-				</div>
+				)}
 
-				<div className="hidden md:block">
-					{expanded && (
-						<div className="grid gap-4 md:grid-cols-3">
-							{extraItems.map((item) => (
-								<article
-									key={item.src}
-									className="group relative min-h-65 overflow-hidden rounded-[28px] border border-[#e9e3e0] bg-white shadow-sm"
-								>
-									<Image
-										src={item.src}
-										alt={item.alt}
-										fill
-										sizes="(max-width: 768px) 100vw, 33vw"
-										className="object-cover transition duration-500 group-hover:scale-[1.02]"
-									/>
-								</article>
-							))}
-						</div>
-					)}
-				</div>
-
-				<div>
+				<div className="pt-2 text-center md:text-left">
 					<button
 						type="button"
 						onClick={() => setExpanded((prev) => !prev)}
-						className="rounded-md border border-[#cdbab2] bg-[#f4e8e5] px-6 py-3 text-sm font-semibold text-[#5c4e4e] shadow-[0_0_0_1px_rgba(255,255,255,0.35)_inset] transition hover:border-[#c1aba2] hover:bg-[#efdfdb] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#cdbab2]"
+						className="rounded-full border border-[#dfceca] bg-[#f9f2f0] px-8 py-3.5 text-xs font-semibold uppercase tracking-widest text-[#5c4e4e] transition hover:bg-[#f4e8e5] hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#cdbab2]"
 					>
-						{expanded ? "Ver menos" : "Ver mais trabalhos"}
+						{expanded ? "Ver menos trabalhos" : "Ver mais trabalhos"}
 					</button>
 				</div>
 			</div>
