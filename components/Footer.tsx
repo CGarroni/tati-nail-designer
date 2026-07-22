@@ -1,6 +1,6 @@
 const instagramLink = "https://www.instagram.com/tatisilvanaildesigner/";
 const whatsappLink =
-  "https://wa.me/5551994383663?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20hor%C3%A1rio%20ou%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20Tati.";
+  "https://wa.me/5551994383663?text=Olá! Vim pelo site e gostaria de agendar um horário.";
 
 const navLinks = [
   { label: "Início", href: "#topo" },

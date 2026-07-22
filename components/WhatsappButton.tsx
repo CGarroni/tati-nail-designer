@@ -1,5 +1,5 @@
 const whatsappLink =
-  "https://wa.me/5551994383663?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20atendimentos%20da%20Tati.";
+  "https://wa.me/5551994383663?text=Olá! Vim pelo site e gostaria de agendar um horário.";
 
 export default function WhatsappButton() {
   return (
