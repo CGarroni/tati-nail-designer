@@ -16,7 +16,7 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl rounded-3xl border border-[#f0eae6] bg-white px-8 py-10 shadow-xs md:px-12 md:py-14">
         <div className="grid gap-10 md:grid-cols-[1.2fr_0.8fr_0.9fr]">
           <div className="space-y-4">
-            <h2 className="font-serif text-2xl font-normal text-[#4a3d3d]">
+            <h2 className="font-serif text-2xl font-normal text-[#a9807d]">
               Tati Silva Nail Designer
             </h2>
 
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-[#8a7472]">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-[#a9807d]">
               Navegação
             </h3>
 
@@ -44,7 +44,7 @@ export default function Footer() {
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-[#8a7472]">
+            <h3 className="text-xs font-semibold uppercase tracking-[0.15em] text-[#a9807d]">
               Contato & Local
             </h3>
 

@@ -1,44 +1,57 @@
 const highlights = [
-  "Atendimento individual",
-  "Horário agendado",
-  "Materiais esterilizados",
-  "Ambiente climatizado",
+	"Atendimento individual",
+	"Horário agendado",
+	"Materiais esterilizados",
+	"Ambiente climatizado",
 ];
 
 export default function Highlights() {
-  return (
-    <section className="px-4 py-20 md:py-32">
-      <div className="mx-auto max-w-7xl rounded-3xl border border-[#f0eae6] bg-[#fffcfb] p-8 md:p-16 shadow-[0_10px_40px_rgba(74,61,61,0.03)]">
-        <div className="grid gap-10 md:grid-cols-[1fr_1.2fr] md:items-center">
-          <div className="space-y-5">
-            <span className="inline-flex rounded-full bg-[#f4e8e5] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#8a7472]">
-              Diferenciais
-            </span>
+	return (
+		<section className="px-4 py-20 md:py-28">
+			<div className="mx-auto max-w-7xl rounded-[40px] bg-[#fffaf8] border border-[#f0e7e4] p-8 md:p-14">
+				<div className="grid gap-14 md:grid-cols-[0.95fr_1.05fr] items-center">
+					<div className="space-y-6">
+						<span className="inline-flex rounded-full bg-[#f5ebe8] px-4 py-2 text-xs tracking-[0.18em] uppercase text-[#9a7d79]">
+							Diferenciais
+						</span>
 
-            <h2 className="font-serif text-3xl font-normal leading-tight text-[#4a3d3d] md:text-4xl lg:text-5xl">
-              Um atendimento pensado para quem valoriza cuidado, conforto e tranquilidade.
-            </h2>
+						<h2 className="font-serif font-light text-[2.2rem] leading-[1.2] tracking-[0.01em] text-[#a9807d] md:text-[3.25rem]">
+							Sua beleza merece um cuidado especial.
+						</h2>
 
-            <p className="text-base leading-relaxed text-[#6b5a5a] md:text-lg">
-              Cada detalhe do atendimento é pensado para oferecer mais organização, bem-estar e confiança do início ao fim.
-            </p>
-          </div>
+						<p className="max-w-xl text-[17px] leading-8 text-[#746464]">
+							Um momento preparado para que você se sinta acolhida, confortável
+							e confiante, com atenção aos detalhes que fazem toda a diferença
+							no resultado final.
+						</p>
+					</div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            {highlights.map((item) => (
-              <div
-                key={item}
-                className="group rounded-2xl border border-[#f4ece8] bg-white px-6 py-6 text-sm font-medium text-[#5c4e4e] shadow-xs transition duration-300 hover:border-[#dfceca] hover:shadow-md md:text-base"
-              >
-                <div className="flex items-center gap-3">
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#cda5a3] transition-transform duration-300 group-hover:scale-150" />
-                  {item}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
-    </section>
-  );
+					<div className="grid gap-5 sm:grid-cols-2">
+						{highlights.map((item) => (
+							<article
+								key={item}
+								className="
+                  rounded-[28px]
+                  border
+                  border-[#f2e9e6]
+                  bg-white
+                  p-7
+                  transition-all
+                  duration-300
+                  hover:-translate-y-1
+                  hover:shadow-lg
+                "
+							>
+								<div className="mb-5 h-px w-10 bg-[#d8bbb7]" />
+
+								<h3 className="font-serif text-[1.35rem] font-light leading-snug text-[#4b3d3d]">
+									{item}
+								</h3>
+							</article>
+						))}
+					</div>
+				</div>
+			</div>
+		</section>
+	);
 }

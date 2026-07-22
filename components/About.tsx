@@ -5,48 +5,72 @@ const whatsappLink =
 
 export default function About() {
   return (
-    <section id="sobre" className="px-4 py-20 md:py-32">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2 lg:gap-16">
-        <div className="overflow-hidden rounded-3xl border border-[#f0eae6] bg-white shadow-sm">
+    <section id="sobre" className="px-4 py-20 md:py-28">
+      <div className="mx-auto grid max-w-7xl items-center gap-14 md:grid-cols-2">
+
+        {/* Foto */}
+        <div className="overflow-hidden rounded-[36px] border border-[#f0e7e4] bg-white">
           <Image
             src="/galeria/hero-mobile2.png"
             alt="Tati Silva Nail Designer em seu espaço de atendimento"
             width={1536}
             height={2048}
             quality={92}
-            sizes="(max-width: 768px) 100vw, 42vw"
+            sizes="(max-width:768px)100vw,45vw"
             className="h-auto w-full object-cover transition duration-700 hover:scale-[1.02]"
           />
         </div>
 
-        <div className="space-y-6">
-          <span className="inline-flex rounded-full bg-[#f4e8e5] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#8a7472]">
-            Sobre a profissional
+        {/* Conteúdo */}
+        <div className="space-y-7">
+
+          <span className="inline-flex rounded-full bg-[#f5ebe8] px-4 py-2 text-xs uppercase tracking-[0.18em] text-[#9a7d79]">
+            Sobre
           </span>
 
-          <h2 className="font-serif text-3xl font-normal leading-tight text-[#4a3d3d] md:text-4xl lg:text-5xl">
-            Cuidado, técnica e delicadeza em cada atendimento.
+          <h2 className="font-serif font-light text-[2.2rem] leading-[1.2] tracking-[0.01em] text-[#a9807d] md:text-[3.2rem]">
+            Um atendimento pensado para realçar sua beleza.
           </h2>
 
-          <p className="text-base leading-relaxed text-[#6b5a5a] md:text-lg">
-            Sou a Tati Silva, nail designer especializada em valorizar sua beleza com acabamento delicado, técnica e atenção aos detalhes.
+          <p className="max-w-xl text-[17px] leading-8 text-[#6b5a5a]">
+            Sou a Tati Silva, nail designer apaixonada por transformar cada
+            atendimento em um momento de cuidado, leveza e bem-estar.
           </p>
 
-          <p className="text-base leading-relaxed text-[#6b5a5a]">
-            Cada atendimento acontece de forma mais personalizada, com foco em conforto, organização e um resultado elegante para o seu dia a dia.
+          <p className="max-w-xl text-[17px] leading-8 text-[#6b5a5a]">
+            Cada detalhe é preparado com carinho para que você se sinta
+            acolhida, confortável e saia daqui com unhas elegantes, naturais e
+            cheias de personalidade.
           </p>
 
-          <div className="pt-2">
-            <a
-              href={whatsappLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex rounded-full border border-[#dfceca] bg-[#f9f2f0] px-7 py-3.5 text-xs font-semibold uppercase tracking-widest text-[#5c4e4e] transition hover:bg-[#f4e8e5] hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#cdbab2]"
-            >
-              Conversar no WhatsApp
-            </a>
-          </div>
+          <a
+            href={whatsappLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="
+              inline-flex
+              items-center
+              rounded-xl
+              border
+              border-[#d8bbb7]
+              bg-[#f8efec]
+              px-7
+              py-3.5
+              text-sm
+              font-medium
+              tracking-[0.04em]
+              text-[#8f6d69]
+              transition-all
+              duration-300
+              hover:-translate-y-1px
+              hover:bg-[#f3e6e2]
+            "
+          >
+            Agendar meu atendimento
+          </a>
+
         </div>
+
       </div>
     </section>
   );

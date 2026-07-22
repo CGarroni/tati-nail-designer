@@ -33,40 +33,60 @@ const servicos = [
 
 export default function Servicos() {
   return (
-    <section id="servicos" className="px-4 py-20 md:py-32 bg-[#faf6f4]/50">
-      <div className="mx-auto max-w-7xl space-y-12">
-        <div className="max-w-2xl space-y-4">
-          <span className="inline-flex rounded-full bg-[#f4e8e5] px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-[#8a7472]">
+    <section id="servicos" className="px-4 py-20 md:py-28">
+      <div className="mx-auto max-w-7xl">
+
+        <div className="max-w-3xl space-y-6">
+
+          <span className="inline-flex rounded-full bg-[#f5ebe8] px-4 py-2 text-xs uppercase tracking-[0.18em] text-[#9a7d79]">
             Serviços
           </span>
 
-          <h2 className="font-serif text-3xl font-normal leading-tight text-[#4a3d3d] md:text-4xl lg:text-5xl">
-            Serviços pensados para unir beleza, cuidado e acabamento elegante.
+          <h2 className="font-serif font-light text-[2.2rem] leading-[1.2] tracking-[0.01em] text-[#a9807d] md:text-[3.2rem]">
+            Cuidados pensados para valorizar sua beleza.
           </h2>
 
-          <p className="text-base leading-relaxed text-[#6b5a5a] md:text-lg">
-            Cada atendimento é realizado com atenção aos detalhes para oferecer uma experiência mais confortável, organizada e visualmente refinada.
+          <p className="max-w-2xl text-[17px] leading-8 text-[#6b5a5a]">
+            Cada atendimento é realizado com atenção aos detalhes para oferecer
+            unhas elegantes, durabilidade e um resultado que combina com seu
+            estilo e sua rotina.
           </p>
+
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-14 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+
           {servicos.map((servico) => (
             <article
               key={servico.title}
-              className="group rounded-3xl border border-[#f0eae6] bg-white p-8 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[#dfceca] hover:shadow-lg"
+              className="
+                group
+                rounded-[30px]
+                border
+                border-[#f0e7e4]
+                bg-white
+                p-8
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:border-[#e2cfca]
+                hover:shadow-[0_18px_40px_rgba(74,61,61,0.06)]
+              "
             >
-              <div className="space-y-4">
-                <h3 className="font-serif text-2xl font-normal text-[#4a3d3d] group-hover:text-[#a9807d] transition-colors">
-                  {servico.title}
-                </h3>
+              <div className="mb-6 h-px w-12 bg-[#d8bbb7]" />
 
-                <p className="text-sm leading-relaxed text-[#6b5a5a] md:text-base">
-                  {servico.description}
-                </p>
-              </div>
+              <h3 className="font-serif font-light text-[1.7rem] text-[#a9807d]">
+                {servico.title}
+              </h3>
+
+              <p className="mt-4 text-[16px] leading-8 text-[#6b5a5a]">
+                {servico.description}
+              </p>
             </article>
           ))}
+
         </div>
+
       </div>
     </section>
   );
