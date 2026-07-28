@@ -4,6 +4,7 @@ import Highlights from "@/components/Highlights";
 import Sobre from "@/components/About";
 import Servicos from "@/components/Services";
 import Galeria from "@/components/Gallery";
+import Testimonials from "@/components/Testimonials";
 import FinalCTA from "@/components/FinalCTA";
 import Localizacao from "@/components/Localizacion";
 import Footer from "@/components/Footer";
@@ -24,6 +25,8 @@ export default function Home() {
         <Servicos />
 
         <Galeria />
+
+        <Testimonials />
 
         <FinalCTA />
 

@@ -11,7 +11,7 @@ export default function About() {
         {/* Foto */}
         <div className="overflow-hidden rounded-[36px] border border-[#f0e7e4] bg-white">
           <Image
-            src="/galeria/hero-mobile2.png"
+            src="/galeria/about-image.png"
             alt="Tati Silva Nail Designer em seu espaço de atendimento"
             width={1536}
             height={2048}
