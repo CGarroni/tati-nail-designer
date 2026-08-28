@@ -18,6 +18,9 @@ const dmSerif = DM_Serif_Display({
 
 export const metadata: Metadata = {
 	metadataBase: new URL("https://tatinaildesigner.vercel.app/"),
+	verification: {
+  google: "_pZzomy_6FKQsUMVMrj-T1cjwTIB_UuzQs7MZG3KRD8",
+},
 	title: "Tati Silva Nail Designer | Unhas em Novo Hamburgo",
 	description:
 		"Blindagem, esmaltação em gel, alongamento e manutenção com atendimento individual em Canudos, Novo Hamburgo.",
