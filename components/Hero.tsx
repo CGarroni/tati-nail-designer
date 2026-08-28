@@ -6,6 +6,10 @@ const whatsappLink =
 export default function Hero() {
 	return (
 		<section id="topo" className="relative overflow-hidden bg-[#f4ece8]">
+			<h1 className="sr-only">
+				Tati Silva Nail Designer — Unhas em Novo Hamburgo
+			</h1>
+			
 			<div className="relative hidden xl:block min-h-[92vh]">
 				<Image
 					src="/galeria/nail-banner-desktop.png"
